@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">COMP304_TermProject</string>
+    <string name="bgImgDesc">Watch with calorie tracker</string>
+    <string name="mainTitle">Calorie Watchers!</string>
 </resources>
