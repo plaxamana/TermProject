@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
         mActionBar.hide();
     }
 
-    public void logIn(){
+    public void logIn(View v){
         mIntent = new Intent(this, LoginActivity.class);
         startActivity(mIntent);
     }
 
-    public void signUp(){
+    public void signUp(View v){
         mIntent = new Intent(this, SignupActivity.class);
         startActivity(mIntent);
     }
