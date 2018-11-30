@@ -8,4 +8,8 @@
     <color name="Grey">#7F7F7F</color>
     <color name="DarkGrey">#4F4F4F</color>
     <color name="TransparentGrey">#7F000000</color>
+    <color name="Blue">#0070BF</color>
+    <color name="MidnightBlue2">#001e42</color>
+    <color name="MidnightBlue1">#002a5c</color>
+    <color name="Orange">#e57b15</color>
 </resources>

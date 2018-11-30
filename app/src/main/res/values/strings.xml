@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">COMP304_TermProject</string>
     <string name="bgImgDesc">Watch with calorie tracker</string>
+    <string name="logoDesc">Calorie Tracker</string>
     <string name="mainTitle">Count able+</string>
     <string name="app_desc">Making the calories matter.</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
-
+    <string name="username">Username</string>
+    <string name="password">Password</string>
 </resources>
