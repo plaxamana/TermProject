@@ -1,9 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SignupActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:background="@color/MidnightBlue2">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/marginSpace"
+        android:layout_marginRight="@dimen/marginSpace">
+
+        <TextView
+            android:id="@+id/tv_fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fullName"
+            android:textSize="@dimen/subtitle1_font_size"
+            android:textStyle="bold"
+            android:textColor="@color/White"/>
+
+        <EditText
+            android:id="@+id/et_fullName"
+            android:layout_marginTop="@dimen/marginTopSpace"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:background="@drawable/rounded_rectangle"/>
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_marginTop="@dimen/marginTopSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            android:textSize="@dimen/subtitle1_font_size"
+            android:textStyle="bold"
+            android:textColor="@color/White"/>
+
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_marginTop="@dimen/marginTopSpace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/White"
+                android:textSize="@dimen/smallerFont"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/White"
+                android:textSize="@dimen/smallerFont"
+                android:text="@string/female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_activityLevel"
+            android:layout_marginTop="@dimen/marginTopSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activityLevelQuestion"
+            android:textSize="@dimen/subtitle1_font_size"
+            android:textStyle="bold"
+            android:textColor="@color/White"/>
+
+        <Spinner
+            android:id="@+id/spinner_activityLevel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/marginTopSpace"
+            android:background="@drawable/rounded_rectangle_spinner"
+            android:entries="@array/activityLevel_array"
+            android:prompt="@string/activityLevelQuestion" />
+
+        <TextView
+            android:id="@+id/tv_dob"
+            android:layout_marginTop="@dimen/marginTopSpace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dob"
+            android:textSize="@dimen/subtitle1_font_size"
+            android:textStyle="bold"
+            android:textColor="@color/White"/>
+
+    </LinearLayout>
+</ScrollView>

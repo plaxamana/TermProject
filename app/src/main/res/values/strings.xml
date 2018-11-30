@@ -8,4 +8,20 @@
     <string name="register">Register</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="fullName">Enter your full name</string>
+    <string name="sex">Sex</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="height">Height in cm</string>
+    <string name="weight">Weight in kg</string>
+    <string name="email">Enter your email</string>
+    <string name="activityLevelQuestion">How active are you?</string>
+    <string name="dob">Enter your DOB</string>
+
+    <string-array name="activityLevel_array">
+        <item>Sedentary</item>
+        <item>Lightly Active</item>
+        <item>Active</item>
+        <item>Very Active</item>
+    </string-array>
 </resources>
