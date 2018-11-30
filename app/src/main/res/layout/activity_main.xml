@@ -7,7 +7,7 @@
 
     <ImageView
         android:id="@+id/backgroundImg"
-        android:layout_width="800dp"
+        android:layout_width="1000dp"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
         android:background="@drawable/bg"
@@ -15,6 +15,7 @@
         android:scaleType="fitXY" />
 
     <RelativeLayout
+        android:id="@+id/relLayout1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -22,12 +23,12 @@
             android:id="@+id/mainTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:padding="5dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
             android:fontFamily="@font/ubuntu_medium"
+            android:padding="5dp"
             android:shadowColor="@color/Black"
             android:shadowDx="3.0"
             android:shadowDy="3.0"
@@ -37,6 +38,47 @@
             android:textSize="@dimen/title_font_size"
             android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/app_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainTitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:padding="5dp"
+            android:shadowColor="@color/Black"
+            android:shadowDx="3.0"
+            android:shadowDy="3.0"
+            android:shadowRadius="20"
+            android:text="@string/app_desc"
+            android:textColor="@color/White"
+            android:textSize="@dimen/subtitle_font_size"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnReigster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/register" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="145dp"
+            android:layout_marginBottom="50dp"
+            android:layout_toEndOf="@+id/btnReigster"
+            android:text="@string/login" />
+
     </RelativeLayout>
+
+
 
 </FrameLayout>
