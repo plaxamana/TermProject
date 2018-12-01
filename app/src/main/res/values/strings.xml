@@ -17,11 +17,26 @@
     <string name="email">Enter your email</string>
     <string name="activityLevelQuestion">How active are you?</string>
     <string name="dob">Enter your DOB</string>
+    <string name="weightGoal">What is your goal?</string>
+    <string name="weeklyGoal">What is your weekly goal?</string>
+    <string name="submit">Submit</string>
 
     <string-array name="activityLevel_array">
         <item>Sedentary</item>
         <item>Lightly Active</item>
         <item>Active</item>
         <item>Very Active</item>
+    </string-array>
+
+    <string-array name="weightGoal_array">
+        <item>To gain weight (muscle)</item>
+        <item>To lose weight (fat)</item>
+        <item>To maintain weight</item>
+    </string-array>
+
+    <string-array name="weeklyGoal_array">
+        <item>Gain/Lose 0.45 kg (1 lb) per week</item>
+        <item>Gain/Lose 0.9 kg (2 lb) per week</item>
+        <item>To maintain weight</item>
     </string-array>
 </resources>
