@@ -3,6 +3,7 @@ package com.philiplaxamana.comp304_termproject;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.ContentValues;
+import android.content.Intent;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,6 +14,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -36,7 +38,10 @@ public class SignupActivity extends AppCompatActivity {
     Button btnSubmit;
     EditText _fullName, _DOB, _height, _weight, _username, _password;
     String _activityLevel, _goal, _weeklyGoal, sex;
+    RadioGroup radioSexGroup;
     RadioButton male, female;
+
+    Intent mIntent;
 
 
     @Override
@@ -59,8 +64,6 @@ public class SignupActivity extends AppCompatActivity {
         // Handle submit button (save)
         btnSubmit = findViewById(R.id.btnSubmit);
         _fullName = findViewById(R.id.et_fullName);
-        female = findViewById(R.id.rb_female);
-        male = findViewById(R.id.rb_male);
         _DOB = findViewById(R.id.et_dob);
         _height = findViewById(R.id.et_height);
         _weight = findViewById(R.id.et_currentWeight);
@@ -70,8 +73,23 @@ public class SignupActivity extends AppCompatActivity {
         _goal = spinner_goal.getSelectedItem().toString();
         _weeklyGoal = spinner_weeklyGoal.getSelectedItem().toString();
 
+        radioSexGroup = findViewById(R.id.rg_sex);
+        radioSexGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId){
+                    case R.id.rb_male:
+                        sex = "male";
+                        break;
+                    case R.id.rb_female:
+                        sex = "female";
+                        break;
+                    default:
+                        break;
+                }
+            }
+        });
 
-        final String sex = radioGroupSex();
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,60 +106,19 @@ public class SignupActivity extends AppCompatActivity {
                 record[10] = _password.getText().toString();
 
                 ContentValues values = new ContentValues();
-                for(int i=0; i<record.length; i++){
+                for(int i=1; i<record.length; i++){
                     values.put(fields[i], record[i]);
-                    dbManager.addRecord(values, "tbl_users", fields, record);
                 }
+
+                    dbManager.addRecord(values, "tbl_users", fields, record);
+                    Toast.makeText(getApplicationContext(), "User successfully created!  Please login.", Toast.LENGTH_SHORT).show();
+                    mIntent = new Intent(getApplicationContext(), LoginActivity.class);
+                    startActivity(mIntent);
             }
         });
 
 
     }
 
-//    public void onSubmitClicked(String fullName, String sex, String dob, String height,
-//                                String weight, String activityLevel, String goal, String weeklyGoal,
-//                                String username, String password){
-//
-//
-//
-//        fullName = _fullName.getText().toString();
-//
-//
-//    }
-
-    public String radioGroupSex(){
-        String sex;
-
-        if(male.isChecked()){
-            sex = "male";
-        } else {
-            sex = "female";
-        }
-
-        return sex;
-    }
-
-
-
 }
 
-
-//    public static class DatePickerFragment extends DialogFragment
-//            implements DatePickerDialog.OnDateSetListener {
-//
-//        @Override
-//        public Dialog onCreateDialog(Bundle savedInstanceState) {
-//            // Use the current date as the default date in the picker
-//            final Calendar c = Calendar.getInstance();
-//            int year = c.get(Calendar.YEAR);
-//            int month = c.get(Calendar.MONTH);
-//            int day = c.get(Calendar.DAY_OF_MONTH);
-//
-//            // Create a new instance of DatePickerDialog and return it
-//            return new DatePickerDialog(getActivity(), this, year, month, day);
-//        }
-//
-//        public void onDateSet(DatePicker view, int year, int month, int day) {
-//            // Do something with the date chosen by the user
-//        }
-//    }
