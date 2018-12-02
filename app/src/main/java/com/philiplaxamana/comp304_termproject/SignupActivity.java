@@ -2,6 +2,7 @@ package com.philiplaxamana.comp304_termproject;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.ContentValues;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 
 import java.util.Calendar;
@@ -33,7 +35,7 @@ public class SignupActivity extends AppCompatActivity {
     Spinner spinner_activityLevel, spinner_weeklyGoal, spinner_goal;
     Button btnSubmit;
     EditText _fullName, _DOB, _height, _weight, _username, _password;
-    String _activityLevel, _goal, _weeklyGoal;
+    String _activityLevel, _goal, _weeklyGoal, sex;
     RadioButton male, female;
 
 
@@ -56,7 +58,7 @@ public class SignupActivity extends AppCompatActivity {
 
         // Handle submit button (save)
         btnSubmit = findViewById(R.id.btnSubmit);
-        _fullName = findViewById(R.id.et_username);
+        _fullName = findViewById(R.id.et_fullName);
         female = findViewById(R.id.rb_female);
         male = findViewById(R.id.rb_male);
         _DOB = findViewById(R.id.et_dob);
@@ -69,15 +71,56 @@ public class SignupActivity extends AppCompatActivity {
         _weeklyGoal = spinner_weeklyGoal.getSelectedItem().toString();
 
 
+        final String sex = radioGroupSex();
+
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                record[1] = _fullName.getText().toString();
+                record[2] = sex;
+                record[3] = _DOB.getText().toString();
+                record[4] = _activityLevel;
+                record[5] = _height.getText().toString();
+                record[6] = _weight.getText().toString();
+                record[7] = _goal;
+                record[8] = _weeklyGoal;
+                record[9] = _username.getText().toString();
+                record[10] = _password.getText().toString();
+
+                ContentValues values = new ContentValues();
+                for(int i=0; i<record.length; i++){
+                    values.put(fields[i], record[i]);
+                    dbManager.addRecord(values, "tbl_users", fields, record);
+                }
+            }
+        });
+
+
     }
 
-    public void onSubmitClicked(String fullName, String sex, String dob, String height,
-                                String weight, String activityLevel, String goal, String weeklyGoal,
-                                String username, String password){
+//    public void onSubmitClicked(String fullName, String sex, String dob, String height,
+//                                String weight, String activityLevel, String goal, String weeklyGoal,
+//                                String username, String password){
+//
+//
+//
+//        fullName = _fullName.getText().toString();
+//
+//
+//    }
 
+    public String radioGroupSex(){
+        String sex;
 
+        if(male.isChecked()){
+            sex = "male";
+        } else {
+            sex = "female";
+        }
 
+        return sex;
     }
+
 
 
 }
