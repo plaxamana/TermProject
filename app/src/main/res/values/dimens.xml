@@ -5,5 +5,5 @@
     <dimen name="subtitle1_font_size">20sp</dimen>
     <dimen name="marginSpace">10dp</dimen>
     <dimen name="smallerFont">16sp</dimen>
-    <dimen name="marginTopSpace">5dp</dimen>
+    <dimen name="marginTopSpace">10dp</dimen>
 </resources>
