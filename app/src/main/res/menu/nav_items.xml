@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_account"
-        android:icon="@drawable/round_account_circle_black_48"
-        android:title="@string/nav_account" />
+        android:id="@+id/nav_SMS"
+        android:icon="@drawable/round_textsms_black_48"
+        android:title="@string/nav_sms" />
     <item
         android:id="@+id/nav_diary"
         android:icon="@drawable/round_book_black_48"
         android:title="@string/nav_diary" />
     <item
-        android:id="@+id/nav_SMS"
-        android:icon="@drawable/round_textsms_black_48"
-        android:title="@string/nav_sms" />
+        android:id="@+id/nav_account"
+        android:icon="@drawable/round_account_circle_black_48"
+        android:title="@string/nav_account" />
 </menu>

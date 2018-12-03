@@ -16,9 +16,9 @@ android:layout_width="fill_parent" android:layout_height="fill_parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fullName"
-            android:textSize="@dimen/subtitle1_font_size"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"/>
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_fullName"
@@ -43,15 +43,14 @@ android:layout_width="fill_parent" android:layout_height="fill_parent"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_weight="1"
                 android:id="@+id/tv_sex"
-                android:layout_marginTop="@dimen/marginTopSpace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text="@string/sex"
-                android:textSize="@dimen/subtitle1_font_size"
-                android:textStyle="bold"
-                android:textColor="@color/colorWhite"/>
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/rb_male"
@@ -77,13 +76,13 @@ android:layout_width="fill_parent" android:layout_height="fill_parent"
 
         <TextView
             android:id="@+id/tv_dob"
-            android:layout_marginTop="@dimen/marginTopSpace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopSpace"
             android:text="@string/dob"
-            android:textSize="@dimen/subtitle1_font_size"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"/>
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/et_dob"
@@ -99,13 +98,13 @@ android:layout_width="fill_parent" android:layout_height="fill_parent"
 
         <TextView
             android:id="@+id/tv_activityLevel"
-            android:layout_marginTop="@dimen/marginTopSpace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopSpace"
             android:text="@string/activityLevelQuestion"
-            android:textSize="@dimen/subtitle1_font_size"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"/>
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinner_activityLevel"
@@ -135,13 +134,13 @@ android:layout_width="fill_parent" android:layout_height="fill_parent"
 
                 <TextView
                     android:id="@+id/tv_height"
-                    android:layout_marginTop="@dimen/marginTopSpace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopSpace"
                     android:text="@string/height"
-                    android:textSize="@dimen/subtitle1_font_size"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorWhite"/>
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/et_height"
@@ -166,13 +165,13 @@ android:layout_width="fill_parent" android:layout_height="fill_parent"
 
                 <TextView
                     android:id="@+id/tv_currentWeight"
-                    android:layout_marginTop="@dimen/marginTopSpace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopSpace"
                     android:text="@string/weight"
-                    android:textSize="@dimen/subtitle1_font_size"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorWhite"/>
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/et_currentWeight"
@@ -194,13 +193,13 @@ android:layout_width="fill_parent" android:layout_height="fill_parent"
 
         <TextView
             android:id="@+id/tv_weightRate"
-            android:layout_marginTop="@dimen/marginTopSpace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopSpace"
             android:text="@string/weightGoal"
-            android:textSize="@dimen/subtitle1_font_size"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"/>
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinner_goal"
@@ -215,13 +214,13 @@ android:layout_width="fill_parent" android:layout_height="fill_parent"
 
         <TextView
             android:id="@+id/tv_weeklyGoal"
-            android:layout_marginTop="@dimen/marginTopSpace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopSpace"
             android:text="@string/weeklyGoal"
-            android:textSize="@dimen/subtitle1_font_size"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"/>
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/spinner_weeklyGoal"
@@ -250,13 +249,13 @@ android:layout_width="fill_parent" android:layout_height="fill_parent"
 
                 <TextView
                     android:id="@+id/tv_username"
-                    android:layout_marginTop="@dimen/marginTopSpace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopSpace"
                     android:text="@string/username"
-                    android:textSize="@dimen/subtitle1_font_size"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorWhite"/>
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/et_username"
@@ -282,13 +281,13 @@ android:layout_width="fill_parent" android:layout_height="fill_parent"
 
                 <TextView
                     android:id="@+id/tv_password"
-                    android:layout_marginTop="@dimen/marginTopSpace"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopSpace"
                     android:text="@string/password"
-                    android:textSize="@dimen/subtitle1_font_size"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorWhite"/>
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/et_password"
