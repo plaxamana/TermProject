@@ -20,6 +20,11 @@
     <string name="weightGoal">What is your goal?</string>
     <string name="weeklyGoal">What is your weekly goal?</string>
     <string name="submit">Submit</string>
+    <string name="fullname_hint">ex. John Doe</string>
+    <string name="DOB_hint">MM/DD/YYYY</string>
+    <string name="height_hint">180</string>
+    <string name="weight_hint">70</string>
+    <string name="email_hint">user@example.com</string>
 
     <string-array name="activityLevel_array">
         <item>Sedentary</item>
