@@ -20,6 +20,9 @@
     <string name="weightGoal">What is your goal?</string>
     <string name="weeklyGoal">What is your weekly goal?</string>
     <string name="submit">Submit</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_diary">Food Diary</string>
+    <string name="nav_sms">SMS</string>
 
     <string-array name="activityLevel_array">
         <item>Sedentary</item>
