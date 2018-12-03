@@ -3,5 +3,8 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/ubuntu_light</item>
         <item>@font/ubuntu_medium</item>
+        <item>@font/pt_sans_bold</item>
+        <item>@font/pt_sans_narrow</item>
+        <item>@font/noto_sans_bold</item>
     </array>
 </resources>
