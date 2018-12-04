@@ -1,11 +1,12 @@
-# COMP 304 Term Project
+<h1>COMP 304 Term Project</h1>
 
-## Description
+<h2> Description </h2>
 An Android app to calculate the number of calories needed to either gain, maintain, or lose weight.  In addition, it will feature the ability to send and receive SMS, check weather updates.
 
-## Requirements
+<h2> Requirements </h2>
 
-### Upon signing up in the app, it will ask:
+<h3> Upon signing up in the app, it will ask: </h3>
+
 - Your fitness goal (gain/maintain/lose weight)
 - Activity level (sedentary/lightly active/active/very active)
 - Sex
@@ -16,10 +17,13 @@ An Android app to calculate the number of calories needed to either gain, mainta
 - Your email and password to sign up
 - Your first and last name
 
-### Once the user is signed in, they will be able to:
+<h3> Once the user is signed in, they will be able to: </h3> 
+
 - Check profile
 - Add foods
 
-### Additional features will include:
+<h3> Additional features should include:  </h3>
+
 - Send and receive SMS
-- Check for the current weather
+- long running service (like playing BG music)
+- Use networking (fetching data using an API)

@@ -3,7 +3,6 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="White">#FFF</color>
     <color name="Black">#000</color>
     <color name="Grey">#7F7F7F</color>
     <color name="DarkGrey">#4F4F4F</color>
@@ -12,4 +11,6 @@
     <color name="MidnightBlue2">#001e42</color>
     <color name="MidnightBlue1">#002a5c</color>
     <color name="Orange">#e57b15</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteTransparent">#D9FFFFFF</color>
 </resources>
