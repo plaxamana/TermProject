@@ -10,8 +10,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import com.project.models.User;
-
 public class DatabaseManager extends SQLiteOpenHelper {
     //
     private static final String DATABASE_NAME = "Countable.db";
@@ -19,8 +17,6 @@ public class DatabaseManager extends SQLiteOpenHelper {
     //
     private String tables[]; //table names
     private String tableCreatorString[]; //SQL statements to create tables
-
-    private String[] register_fields = {"userID", "fullName", "sex", "DOB", "activityLevel", "height", "weight", "goal", "weeklyGoal", "username", "password"};
 
     //class constructor
     public DatabaseManager(Context context) {
@@ -88,44 +84,6 @@ public class DatabaseManager extends SQLiteOpenHelper {
         db.close(); //close database connection
     }
 
-    // private String[] register_fields = {"userID", "fullName", "sex", "DOB", "activityLevel", "height", "weight", "goal", "weeklyGoal", "username", "password"};
-
-    public boolean registerUser(User currUser)
-    {
-        boolean success = true;
-
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        try {
-            String tableName = "tbl_users";
-
-            ContentValues values = new ContentValues();
-
-            values.put(register_fields[0], 1);
-            values.put(register_fields[1], currUser.getFullName());
-            values.put(register_fields[2], currUser.getSex());
-            values.put(register_fields[3], currUser.getDOB());
-            values.put(register_fields[4], currUser.getActivityLevel());
-            values.put(register_fields[5], currUser.getHeight());
-            values.put(register_fields[6], currUser.getWeight());
-            values.put(register_fields[7], currUser.getGoal());
-            values.put(register_fields[8], currUser.getWeeklyGoal());
-            values.put(register_fields[9], currUser.getUsername());
-            values.put(register_fields[10], currUser.getPassword());
-
-            db.insert(tableName, null, values);
-        }
-        catch(Exception ex)
-        {
-            Log.e("Registration Error", ex.getMessage());
-            success = false;
-        }
-        finally {
-            db.close(); //close database connection
-        }
-
-        return success;
-    }
 
     // Read all records
     public List getTable(String tableName) {

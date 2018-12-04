@@ -16,8 +16,6 @@ import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.project.models.User;
-
 import java.util.Calendar;
 
 public class SignupActivity extends AppCompatActivity {
@@ -96,50 +94,26 @@ public class SignupActivity extends AppCompatActivity {
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                record[1] = _fullName.getText().toString();
+                record[2] = sex;
+                record[3] = _DOB.getText().toString();
+                record[4] = _activityLevel;
+                record[5] = _height.getText().toString();
+                record[6] = _weight.getText().toString();
+                record[7] = _goal;
+                record[8] = _weeklyGoal;
+                record[9] = _username.getText().toString();
+                record[10] = _password.getText().toString();
 
-                User currUser = new User();
+                ContentValues values = new ContentValues();
+                for(int i=1; i<record.length; i++){
+                    values.put(fields[i], record[i]);
+                }
 
-                currUser.setUsername(_username.getText().toString());
-                currUser.setPassword(_password.getText().toString());
-                currUser.setFullName(_fullName.getText().toString());
-                currUser.setSex(sex);
-                currUser.setDOB(_DOB.getText().toString());
-                currUser.setActivityLevel(_activityLevel);
-                currUser.setHeight(_height.getText().toString());
-                currUser.setWeight(_weight.getText().toString());
-                currUser.setGoal(_goal);
-                currUser.setWeeklyGoal(_weeklyGoal);
-
-                if (dbManager.registerUser(currUser)) {
+                    dbManager.addRecord(values, "tbl_users", fields, record);
                     Toast.makeText(getApplicationContext(), "User successfully created!  Please login.", Toast.LENGTH_SHORT).show();
                     mIntent = new Intent(getApplicationContext(), LoginActivity.class);
                     startActivity(mIntent);
-                    finish(); // close this activity
-                }
-                else
-                {
-                    Toast.makeText(getApplicationContext(), "Something went wrong. Please try again.", Toast.LENGTH_LONG).show();
-                }
-
-//
-//                record[1] = _fullName.getText().toString();
-//                record[2] = sex;
-//                record[3] = _DOB.getText().toString();
-//                record[4] = _activityLevel;
-//                record[5] = _height.getText().toString();
-//                record[6] = _weight.getText().toString();
-//                record[7] = _goal;
-//                record[8] = _weeklyGoal;
-//                record[9] = _username.getText().toString();
-//                record[10] = _password.getText().toString();
-//
-//                ContentValues values = new ContentValues();
-//                for(int i=1; i<record.length; i++){
-//                    values.put(fields[i], record[i]);
-//                }
-//
-//                    dbManager.addRecord(values, "tbl_users", fields, record);
-
             }
         });
 
