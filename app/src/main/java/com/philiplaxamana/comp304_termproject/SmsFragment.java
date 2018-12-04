@@ -1,9 +1,13 @@
 package com.philiplaxamana.comp304_termproject;
 
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.telephony.SmsManager;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +38,8 @@ public class SmsFragment extends Fragment {
         edit_sms_number = view.findViewById(R.id.edit_sms_number);
         btnSend = view.findViewById(R.id.btnSend);
 
+
+
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +53,10 @@ public class SmsFragment extends Fragment {
         return view;
     }
 
+
+
     public void sendSMS(String phoneNo, String msg) {
+
         try {
             SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage(phoneNo, null, msg, null, null);
@@ -60,4 +69,7 @@ public class SmsFragment extends Fragment {
         }
     }
 
+    public void DisplayToast(String msg){
+        Toast.makeText(getContext(), msg, Toast.LENGTH_SHORT).show();
+    }
 }

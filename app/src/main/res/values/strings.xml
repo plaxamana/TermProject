@@ -45,4 +45,13 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_full_name">Full name:</string>
+    <string name="your_username">Username:</string>
+    <string name="your_sex">Sex:</string>
+    <string name="your_dob">Date of Birth:</string>
+    <string name="your_height">Height (cm):</string>
+    <string name="your_weight">Weight (kg):</string>
+    <string name="your_activityLevel">Activity Level:</string>
+    <string name="your_goal">Goal:</string>
+    <string name="your_weeklyGoal">Weekly Goal:</string>
 </resources>

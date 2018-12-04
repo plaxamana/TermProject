@@ -1,14 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/marginSpace"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AccountFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello from Account Page" />
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_fullName"
+                android:text="@string/your_full_name"
+                android:textSize="@dimen/subtitle1_font_size"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_fullName"
+                android:textAlignment="textEnd"
+                android:hint="ex. John Doe"
+                android:textSize="@dimen/subtitle1_font_size"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_username"
+                android:text="@string/your_username"
+                android:textSize="@dimen/subtitle1_font_size"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_username"
+                android:textAlignment="textEnd"
+                android:hint="johndoe@example.com"
+                android:textSize="@dimen/subtitle1_font_size"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_sex"
+                android:text="@string/your_sex"
+                android:textSize="@dimen/subtitle1_font_size"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_sex"
+                android:textAlignment="textEnd"
+                android:hint="Male"
+                android:textSize="@dimen/subtitle1_font_size"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_dob"
+                android:text="@string/your_dob"
+                android:textSize="@dimen/subtitle1_font_size"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_dob"
+                android:textAlignment="textEnd"
+                android:hint="01/01/1990"
+                android:textSize="@dimen/subtitle1_font_size"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_height"
+                android:text="@string/your_height"
+                android:textSize="@dimen/subtitle1_font_size"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_height"
+                android:textAlignment="textEnd"
+                android:hint="180"
+                android:textSize="@dimen/subtitle1_font_size"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_weight"
+                android:text="@string/your_weight"
+                android:textSize="@dimen/subtitle1_font_size"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_weight"
+                android:textAlignment="textEnd"
+                android:hint="70"
+                android:textSize="@dimen/subtitle1_font_size"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_activityLevel"
+                android:text="@string/your_activityLevel"
+                android:textSize="@dimen/subtitle1_font_size"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_activityLevel"
+                android:textAlignment="textEnd"
+                android:hint="Very Active"
+                android:textSize="@dimen/subtitle1_font_size"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_goal"
+                android:text="@string/your_goal"
+                android:textSize="@dimen/subtitle1_font_size"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_goal"
+                android:textAlignment="textEnd"
+                android:hint="To gain weight (muscle)"
+                android:textSize="@dimen/subtitle1_font_size"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tv_weeklyGoal"
+                android:text="@string/your_weeklyGoal"
+                android:textSize="@dimen/subtitle1_font_size"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_weeklyGoal"
+                android:textAlignment="textEnd"
+                android:hint="Gain/Lose 0.45 kg (1 lb) per week"
+                android:textSize="@dimen/subtitle1_font_size"/>
+        </TableRow>
+
+
+    </TableLayout>
+
 
 </FrameLayout>
