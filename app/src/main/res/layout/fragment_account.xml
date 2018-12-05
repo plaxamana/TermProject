@@ -50,6 +50,7 @@
             <EditText
                 android:id="@+id/et_sex"
                 android:textAlignment="textEnd"
+                android:inputType="none"
                 android:hint="Male"
                 android:textSize="@dimen/subtitle1_font_size"/>
         </TableRow>
@@ -57,6 +58,7 @@
         <TableRow>
             <TextView
                 android:id="@+id/tv_dob"
+                android:inputType="none"
                 android:text="@string/your_dob"
                 android:textSize="@dimen/subtitle1_font_size"
                 android:textStyle="bold"/>
@@ -138,8 +140,19 @@
                 android:textSize="@dimen/subtitle1_font_size"/>
         </TableRow>
 
+        <TableRow>
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Update"/>
+        </TableRow>
+
 
     </TableLayout>
+
+
 
 
 </FrameLayout>

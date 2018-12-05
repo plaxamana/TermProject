@@ -132,5 +132,12 @@ public class DatabaseManager extends SQLiteOpenHelper {
         db.close();
     }
 
+    public Cursor getUserData(String tbl_user, String username) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String selectQuery = "SELECT * FROM " + tbl_user + " WHERE userName=\"" + username + "\"";
+        Cursor c = db.rawQuery(selectQuery, null);
+        c.moveToFirst();
+        return c;
+    }
 }
 
