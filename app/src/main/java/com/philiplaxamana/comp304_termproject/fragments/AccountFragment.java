@@ -1,4 +1,4 @@
-package com.philiplaxamana.comp304_termproject;
+package com.philiplaxamana.comp304_termproject.fragments;
 
 
 import android.content.ContentValues;
@@ -8,7 +8,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +15,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.philiplaxamana.comp304_termproject.helper.DatabaseManager;
+import com.philiplaxamana.comp304_termproject.R;
 
 
 /**

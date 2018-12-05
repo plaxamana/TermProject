@@ -23,6 +23,8 @@
     <string name="nav_account">Account</string>
     <string name="nav_diary">Food Diary</string>
     <string name="nav_sms">SMS</string>
+    <string name="btnAddFood">Add</string>
+    <string name="add_food_item">Add food item</string>
 
     <string-array name="activityLevel_array">
         <item>Sedentary</item>

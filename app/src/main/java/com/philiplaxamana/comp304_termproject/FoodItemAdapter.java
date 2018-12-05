@@ -1,12 +1,13 @@
 package com.philiplaxamana.comp304_termproject;
 
-import android.app.Activity;
 import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.philiplaxamana.comp304_termproject.models.FoodItem;
 
 import java.util.ArrayList;
 

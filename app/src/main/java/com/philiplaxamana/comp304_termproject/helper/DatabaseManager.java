@@ -1,4 +1,4 @@
-package com.philiplaxamana.comp304_termproject;
+package com.philiplaxamana.comp304_termproject.helper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,7 +74,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
     /////////////////////////
 
     // Add a new record
-    void addRecord(ContentValues values, String tableName, String fields[],String record[]) {
+    public void addRecord(ContentValues values, String tableName, String fields[],String record[]) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         for (int i=1;i<record.length;i++)

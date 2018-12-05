@@ -1,4 +1,4 @@
-package com.philiplaxamana.comp304_termproject;
+package com.philiplaxamana.comp304_termproject.fragments;
 
 
 import android.Manifest;
@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.philiplaxamana.comp304_termproject.R;
 
 
 /**

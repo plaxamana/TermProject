@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LandingActivity"
+            android:name=".activities.LandingActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,12 +26,12 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".SignupActivity"
+            android:name=".activities.SignupActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activities.MainActivity" />
 
         <service
             android:name=".BGMService"

@@ -1,4 +1,4 @@
-package com.philiplaxamana.comp304_termproject;
+package com.philiplaxamana.comp304_termproject.models;
 
 // POJO for food item
 

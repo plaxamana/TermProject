@@ -1,9 +1,7 @@
-package com.philiplaxamana.comp304_termproject;
+package com.philiplaxamana.comp304_termproject.fragments;
 
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
@@ -11,8 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.philiplaxamana.comp304_termproject.models.FoodItem;
+import com.philiplaxamana.comp304_termproject.FoodItemAdapter;
+import com.philiplaxamana.comp304_termproject.R;
+
 import java.util.ArrayList;
-import java.util.List;
 
 
 /**

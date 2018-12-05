@@ -1,4 +1,4 @@
-package com.philiplaxamana.comp304_termproject;
+package com.philiplaxamana.comp304_termproject.activities;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -7,6 +7,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import com.philiplaxamana.comp304_termproject.R;
+import com.philiplaxamana.comp304_termproject.fragments.AccountFragment;
+import com.philiplaxamana.comp304_termproject.fragments.FoodDairyFragment;
+import com.philiplaxamana.comp304_termproject.fragments.SmsFragment;
 
 public class MainActivity extends AppCompatActivity {
 
