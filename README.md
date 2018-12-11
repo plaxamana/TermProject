@@ -1,7 +1,7 @@
 <h1>COMP 304 Term Project</h1>
 
 <h2> Description </h2>
-An Android app to calculate the number of calories needed to either gain, maintain, or lose weight.  In addition, it will feature the ability to send and receive SMS, check weather updates.
+An Android app to calculate the number of calories needed to either gain, maintain, or lose weight.  In addition, it will feature the ability to send and receive SMS, show list of food items along with their calories (JSON data)
 
 <h2> Requirements </h2>
 
