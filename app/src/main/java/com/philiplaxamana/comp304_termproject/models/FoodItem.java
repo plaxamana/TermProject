@@ -5,9 +5,9 @@ package com.philiplaxamana.comp304_termproject.models;
 public class FoodItem {
 
     private String name;
-    private int calories;
+    private double calories;
 
-    public FoodItem(String name, int calories) {
+    public FoodItem(String name, double calories) {
         this.name = name;
         this.calories = calories;
     }
@@ -16,7 +16,7 @@ public class FoodItem {
         return name;
     }
 
-    public int getCalories() {
+    public double getCalories() {
         return calories;
     }
 }

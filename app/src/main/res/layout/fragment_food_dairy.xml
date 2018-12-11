@@ -11,21 +11,15 @@
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:weightSum="3"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <AutoCompleteTextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="@string/add_food_item"
-            android:layout_weight="2"/>
 
         <Button
             android:id="@+id/btnAddFoodItem"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/btnAddFood"
-            android:layout_weight="1"/>
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/add_food_item" />
 
     </LinearLayout>
 
